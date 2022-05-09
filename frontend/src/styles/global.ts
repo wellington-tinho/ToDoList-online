@@ -6,13 +6,24 @@ export const GlobalStyle = createGlobalStyle`
 /*==== GLOBAL ==== */
 :root {
   --Ink: #170C3A;
-  --LigthInk: #8F8A9B;
+  --DarkerPurple: #353372;
+  --DarkPurple: #4C4499;
   
   --DarkerBlue: #244AA8; 
-  --Blue: #365DF0;
-  --LightestBlue: #CAD6FC
-  --MostLightestBlue: #E1E7FD
+  /* --Blue: #365DF0; */
+  /* --LightestBlue: #CAD6FC */
+  --MostLightestBlue: #E1E7FD;
+  --LighterGreen: #B7F7D8;
+  
+  --DarkerRed: #A53F3F;
+  --DarkRed: #CC4C4C;
+  --Red: #F95E5A;
 
+  --DarkerGreen: #0E995D;
+  --DarkGreen: #10B26C;
+  --Green: #12DB89;	
+  
+  --LigthInk: #8F8A9B;
   --MosterDarkestWhite: #DEDCE1;
   --DarkerWhite: #F5F4F6  ;
   --white: #FFFFFF
