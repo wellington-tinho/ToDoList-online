@@ -41,7 +41,7 @@ export function SearchAndAddTools(){
         <div>
           <input 
             className="search" 
-            placeholder="Search" 
+            placeholder="Search ..." 
             type="string"
             onChange={ event => setText(event.target.value) }
           />

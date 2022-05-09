@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
 const Container = styled.header`
+  width: 100%;
   color: var(--white) ;
-  background: #170C3A;  
-  padding: 1rem 0;
+  background: var(--Ink) ;
+  padding: 1rem 1rem;;
+  height: 7rem;
   
-
+  
+  
+  
   .header{
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     /* justify-content: center; */
     
-    width: 80%;
+  
     margin: 0 auto ;
 
     h1,h2{
@@ -33,8 +38,9 @@ const Container = styled.header`
       }
     }
 
-    @media (max-width: 1080px){
-      width: 60%;
+    @media (min-width: 1080px){
+      padding: 0;
+      width: 65rem;
     }
   
   }

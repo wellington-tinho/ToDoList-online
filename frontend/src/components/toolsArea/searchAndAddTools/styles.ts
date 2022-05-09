@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
+    height: 5rem;
+    margin: 0 auto;
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
-
-
-
+    padding: 0 1.5rem;
   
+
 
   div{
     display: flex;
@@ -16,47 +18,58 @@ export const Container = styled.div`
     /* gap: 1rem; */
 
     input.search{
+      font: 400 1.3rem 'Source Sans Pro', sans-serif;	  
       margin-right: 1rem;
       padding: 1rem;
-      border: 1px solid #ccc;
       border-radius: 0.5rem;
-      font-size: 1.2rem;
-      background-color: #f5f5f5;
+      border: 1px solid var(--DarkerWhite);
+      background-color: var(--DarkerWhite);
+
+      &:focus{
+        outline: none;
+        filter: brightness(0.9);
+      }
     }
 
     input[type="checkbox"]{
-      //estilo do checkbox
       width: 1.5rem;
       height: 1.5rem;
-      border: 1px solid #ccc;
+      border: 1px solid var(--DarkerWhite);
       border-radius: 0.5rem;
       margin: 0 1rem;
-      accent-color: #74992e;
+      accent-color: var(--DarkGreen);
+    
       
     }
     label{
+      font: 600 1.2rem 'Source Sans Pro', sans-serif;	  
       margin-right: 1rem;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 0.5rem;
-      font-size: 1.2rem;
-      background-color: #f5f5f5;
+      color: var(--white);
     }
   }
   button{
     //Estilo do botão
-    background-color: #4CAF50;
-    border: none;
+    background-color: var(--DarkGreen);
+    border: 1px solid var(--LighterGreen);
+    font: 600 1rem 'Source Sans Pro', sans-serif;	  
     color: white;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px;
-    
+    border-radius: .5rem;
+
+    :hover{
+      background-color: var(--DarkerGreen);
+    }
+    :active{
+      filter: brightness(0.5);
+    }  
   }
+
+  @media (min-width: 1080px){
+      padding: 0;
+      width: 65rem;
+    }
 `
 

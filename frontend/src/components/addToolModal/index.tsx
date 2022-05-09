@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { VscChromeClose } from 'react-icons/vsc';
 import Modal from 'react-modal';
+import { ToolInput } from '../../types/tools';
 import { useTools } from '../hooks/useTools';
-import { ToolInput } from '../types/tools';
 import { Container } from './styles';
 
 

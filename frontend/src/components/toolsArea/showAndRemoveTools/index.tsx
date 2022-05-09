@@ -7,7 +7,6 @@ import { Container } from './styles';
 export function ShowAndRemoveTools(){
   const { tools:toolsList, removeTools } = useTools();
 
-  
   return (
     <Container>
      
@@ -28,7 +27,7 @@ export function ShowAndRemoveTools(){
               <div className="tags">
                 {tool.tags.map(tag => {
                   return(
-                    <span key={tag}> #{tag}</span>
+                    <span key={tag}>#{tag}</span>
                   )
                 })}
               </div>

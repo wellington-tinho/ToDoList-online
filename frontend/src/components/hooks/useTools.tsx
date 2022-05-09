@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 import { api } from '../../services/api';
-import { ToolInput, ToolType } from '../types/tools';
+import { ToolInput, ToolType } from '../../types/tools';
  
 interface ToolsProviderProps{
   children: ReactNode;
