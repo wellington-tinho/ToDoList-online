@@ -9,19 +9,18 @@ ReactModal.setAppElement('#root')
 
 export function ShowAndRemoveTools(){
   const { tools:toolsList } = useTools();
-  
-  const [removeId, setRemoveId] = useState(0);
-  const [removeToolName, setRemoveToolName] = useState('');
-  
+  const [removeTool, setRemoveTool] = useState({id:0, title:''});
   const [isRemoveModal, setIsRemoveModal] = useState(false);
+  const [countDown, setCountDown] = useState(10);
+
 
  function handleOpenConfirmRemoveModal(id:number, name:string){
-  setRemoveToolName(name)
-  setRemoveId(id)
+  setRemoveTool({id:id, title:name});
   setIsRemoveModal(true)
  }
  
   function handleCloseConfirmRemoveModal(){
+    setCountDown(10)
     setIsRemoveModal(false)
   }
 
@@ -64,8 +63,9 @@ export function ShowAndRemoveTools(){
       <ConfirmRemoveModal
         isOpen={isRemoveModal}
         onRequestClose={handleCloseConfirmRemoveModal}
-        toolId={removeId}
-        toolName={removeToolName}
+        tool={removeTool}
+        // count={countDown}
+        // setCount={setCountDown}
       />
     </>
   );
