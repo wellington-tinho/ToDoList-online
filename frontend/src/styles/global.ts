@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   --DarkGreen: #10B26C;
   --Green: #12DB89;	
   
-  --LigthInk: #8F8A9B;
+  /* --LigthInk: #8F8A9B; */
   --MosterDarkestWhite: #DEDCE1;
   --DarkerWhite: #F5F4F6  ;
   --white: #FFFFFF
@@ -102,7 +102,14 @@ ul li{
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   max-width: 50rem;
-  background: var(--DarkerWhite);
+  /* background: var(--DarkerWhite);
+   */
+    background: linear-gradient( 
+    175deg, 
+    var(--DarkerPurple) 0%, 
+    var(--DarkPurple) 49%,
+    var(--Ink) 100%
+    );
   padding: 3rem;
   position: relative;
   border-radius:  0.25rem;
@@ -111,7 +118,7 @@ ul li{
   overflow:auto; 
 }
 .react-modal-close{
-  color: var(--LigthInk);
+  color: var(--white);
   position: absolute;
   font-size: 1rem;
   right: 1.5rem;
