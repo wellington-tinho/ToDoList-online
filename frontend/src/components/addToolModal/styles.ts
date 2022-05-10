@@ -2,16 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.form`
   h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    color: var(--DarkerBlue);
-    font-size: 1.6rem;
+    color: var(--white);
+    height: 30%;
     margin-bottom: 2rem;
-
+    font: 600 2rem 'Source Sans Pro', sans-serif;
   }
     div{
+      margin-top: 3rem;
       /* border: 1px solid var(--background); */
-
       div{
         display: flex;
         background: var(--MosterDarkestWhite);
@@ -25,12 +23,12 @@ export const Container = styled.form`
           padding: 0 1rem;
           height: 3rem;
           border-radius: 0.25rem;
-          font-size: 1rem;
-          font-weight: 600;
           border: 1px solid var(--LigthInk);
           color: var(--LigthInk);
           display: flex;
           align-items: center;
+        
+          font: 600 1.2rem 'Source Sans Pro', sans-serif;
           :hover{
             filter: brightness(0.9);
           }
@@ -53,20 +51,20 @@ export const Container = styled.form`
       }
     
       button{
+      font: 600 1.5rem 'Source Sans Pro', sans-serif;
+
         width: 100%;
         padding: 0 1.5rem;
         height: 3.5rem;
-        background: var(--Blue);
+        background: var(--Green);
         color: var(--white);
         border-radius: 0.25rem;
         border: 0;
-        font-size: 1rem;
         margin-top: 1.5rem;
-        transition: filter 0.2s;
-        font-weight:600;
-        
+        transition: all 0.2s;
         :hover{
-          filter: brightness(0.9);
+           background: var(--DarkerGreen);
+          
         }
       }
     }
