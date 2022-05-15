@@ -60,7 +60,7 @@ function AddToolModal({ isOpen, onRequestClose }: AddToolModalProps) {
                 type="text" name="title" 
                 
                   id="title" 
-                placeholder={'Digite um valor para o titulo'} />
+                placeholder={'Digite um titulo'} />
           </div>
           <div>
             <p>Link</p>
@@ -70,7 +70,7 @@ function AddToolModal({ isOpen, onRequestClose }: AddToolModalProps) {
                 }
                 type="text" name="link"
                 id="link"
-                placeholder={'Digite um valor para o link'} />
+                placeholder={'Digite um link'} />
           </div>
           <div >
             <p className='description'> Description</p>
@@ -81,7 +81,7 @@ function AddToolModal({ isOpen, onRequestClose }: AddToolModalProps) {
                 className='description'
                 name="description"
                 id="description"
-                placeholder={'Digite um valor para a descrição'} />
+                placeholder={'Digite um descrição'} />
           </div>
           <div>
             <p>Tags</p>
@@ -91,7 +91,7 @@ function AddToolModal({ isOpen, onRequestClose }: AddToolModalProps) {
               }
               type="text" name="tags"
               id="tags"
-              placeholder={'Digite um valor para as tags'} />
+              placeholder={'Digite suas tags, separando por virgulas</div>'} />
           </div>
           <button onClick={handleCreateNewTool}>
             <span>Create</span>
