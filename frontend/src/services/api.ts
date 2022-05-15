@@ -4,8 +4,11 @@ var baseURL
 if (process.env.NODE_ENV !== 'production') {
   baseURL = 'http://localhost:3000/tools'
 } else {
-  baseURL = ('')
+  baseURL = ('https://sozei.herokuapp.com/tools')
 }
+
+
+
 
 export const api = axios.create({
   baseURL: baseURL,

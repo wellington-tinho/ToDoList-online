@@ -55,7 +55,7 @@ export function Header(){
         <div>
           <h2>Very useful tools to remember</h2> 
           -
-          <h3>Sozei™</h3>
+          <h3>tinho™</h3>
         </div>
       </div>
     </Container>
