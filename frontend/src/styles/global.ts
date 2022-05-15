@@ -50,13 +50,19 @@ html {
 body {
   font-size: 93.75%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   -webkit-font-smooth: antialiased;
-  background-color: var(--DarkerWhite);
+  /* background-color: var(--DarkerWhite); */
   /* background-image: linear-gradient(black, #544587);  */
-  display: flex;
-  flex-flow: column;
+  /* display: flex;
+  flex-flow: column; */
+  background:  var(--DarkerPurple);
+  background: linear-gradient( 
+    175deg, 
+    var(--DarkerPurple) 0%, 
+    var(--DarkPurple) 49%,
+    var(--Ink) 100%
+    );
+    background-attachment: fixed;
 }
 
 button {

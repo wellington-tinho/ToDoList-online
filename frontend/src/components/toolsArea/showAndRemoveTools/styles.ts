@@ -4,7 +4,9 @@ export const Container = styled.div`
     width: 100%;
     margin: 2rem auto;
     
+    
   ul{
+    /* height: calc(100vh  - 19rem); */
     display: flex;
     align-items: center;
     flex-direction: column;
