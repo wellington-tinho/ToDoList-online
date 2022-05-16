@@ -1,4 +1,6 @@
-#### Select Language: **Portuguese**, [English](https://github.com/wellington-tinho/ToDoList-online)
+#### Select Language: **English**, [Portuguese](https://github.com/wellington-tinho/ToDoList-online/blob/main/README-pt.md)
+
+
 
 
 <p align="center">
@@ -19,7 +21,7 @@
 
 
 
-## Tecnologias
+## Technologies
 
 <p align="center">
   <br />
